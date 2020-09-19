@@ -3,3 +3,5 @@
 *.test
 secrets.*
 *.log
+builds
+*.air*
