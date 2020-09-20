@@ -6,6 +6,7 @@ import (
 )
 
 func handlerFunc (w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "text/html")
     fmt.Println("someone visited the website", r)
     fmt.Fprint(w, "<h1>Welcome to my awesomish site!</h1>")
 }
